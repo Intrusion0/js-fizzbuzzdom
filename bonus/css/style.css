@@ -42,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .fizz {
@@ -55,4 +55,8 @@ body {
 
 .fizzbuzz {
     background-color: #f0466f;
+}
+
+.num_primo {
+    background-color: darkturquoise;
 }

@@ -13,16 +13,10 @@ for (let i = 1; i <= 100; i++) {
     div.append(i);
     contSquare.append(div);
 
-    if (i % 15 === 0) { // --OPPURE-- (i % 3 === 0 && i % 5 === 0)
-        div.classList.add("fizzbuzz");
-        div.innerHTML = `fizzbuzz`;
+    if (i % 1 === 0 && i % i === 0 && i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 7 !== 0) {
+        div.classList.add("num_primo");
+        div.innerHTML = `Numero primo: ${i}`;
     }
-    else if (i % 3 === 0) {
-        div.classList.add("fizz");
-        div.innerHTML = `fizz`;
-    }
-    else if (i % 5 === 0) {
-        div.classList.add("buzz");
-        div.innerHTML = `buzz`;
-    }
+
+    console.log(div, i);
 }
