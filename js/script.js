@@ -13,7 +13,7 @@ for (let i = 1; i <= 100; i++) {
     div.append(i);
     contSquare.append(div);
 
-    if (i % 3 === 0 && i % 5 === 0) {
+    if (i % 15 === 0) { // --OPPURE-- (i % 3 === 0 && i % 5 === 0)
         div.classList.add("fizzbuzz");
         div.innerHTML = `fizzbuzz`;
     }
