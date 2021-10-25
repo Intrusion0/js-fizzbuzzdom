@@ -13,10 +13,16 @@ for (let i = 1; i <= 100; i++) {
     div.append(i);
     contSquare.append(div);
 
-    if (i % 1 === 0 && i % i === 0 && i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 7 !== 0) {
-        div.classList.add("num_primo");
-        div.innerHTML = `Numero primo: ${i}`;
-    }
+    function isPrime(num) {
+        for(var i = 2; i < num; i++)
+          if(num % i === 0) return false;
+        return num > 1;
+      }
+    
+    // if (i % 1 === 0 && i % i === 0 && i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0 && i % 7 !== 0) {
+    //     div.classList.add("num_primo");
+    //     div.innerHTML = `Numero primo: ${i}`;
+    // }
 
-    console.log(div, i);
+    console.log(i);
 }
