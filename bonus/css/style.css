@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General rules */
+
+body {
+    background-color: #083b4c;
+}
+
+/* Container */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    color: white;
+    font-size: 80px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ContainerSquare */
+
+.containerSquare {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.square, .fizz, .buzz, .fizzbuzz {
+    background-color: #1389b2;
+    height: 180px;
+    width: calc(90.1% / 7);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.fizz {
+    background-color: #0bd6a1;
+}
+
+.buzz {
+    background-color: #ffd166;
+}
+
+.fizzbuzz {
+    background-color: #f0466f;
+}
